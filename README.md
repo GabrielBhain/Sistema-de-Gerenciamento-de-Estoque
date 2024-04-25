@@ -1,4 +1,3 @@
-```
 # AvanadeMart - Sistema de Gerenciamento de Produtos
 
 Este é um sistema de gerenciamento de produtos desenvolvido em [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) utilizando classes. O sistema é capaz de realizar operações como adicionar produtos, atualizar preços, adicionar/remover unidades do estoque e remover produtos por ID.
@@ -26,7 +25,7 @@ Este é um sistema de gerenciamento de produtos desenvolvido em [JavaScript](htt
 
 ## Exemplo de Uso
 
-```javascript
+javascript
 // Criar uma instância de Produto
 const produto1 = new Produto(1, "Camiseta", 29.99, 100);
 
@@ -38,7 +37,7 @@ produto1.adicionarEstoque(50);
 
 // Remover unidades do estoque
 produto1.removerEstoque(20);
-```
+
 
 ## Autor
 
