@@ -1,0 +1,73 @@
+<!-- Olá, acabei incrementando mais algumas coisas além do que foi proposto no desafio, como por exemplo a remoção de
+produtos por ID. Algumas coisas ainda podem ser melhoradas com tratamentos de erro.  -->
+<!-- O código está bem comentado e organizado, espero que gostem! Um abraço especial para o professor Celio por ser um querido super compreensivo. :) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvanadeMart</title>
+</head>
+
+<body>
+    <h1>Gerenciamento de Produtos da AvanadeMart (Por Gabriel Augusto Ferreira)</h1>
+
+    <h2>Adicionar Produto:</h2>
+    <label for="produtoId">ID:</label>
+    <input type="text" id="produtoId">
+    <label for="produtoNome">Nome:</label>
+    <input type="text" id="produtoNome">
+    <label for="produtoPreco">Preço:</label>
+    <input type="number" id="produtoPreco">
+    <label for="produtoEstoque">Estoque:</label>
+    <input type="number" id="produtoEstoque">
+    <button onclick="criarProduto()">Adicionar Produto</button>
+
+    <h2>Adicionar Produto Importado:</h2>
+    <label for="produtoImpId">ID:</label>
+    <input type="text" id="produtoImpId">
+    <label for="produtoImpNome">Nome:</label>
+    <input type="text" id="produtoImpNome">
+    <label for="produtoImpPreco">Preço:</label>
+    <input type="number" id="produtoImpPreco">
+    <label for="produtoImpEstoque">Estoque:</label>
+    <input type="number" id="produtoImpEstoque">
+    <label for="produtoImpPais">País de Origem:</label>
+    <input type="text" id="produtoImpPais">
+    <label for="produtoImpTaxa">Taxa de Importação:</label>
+    <input type="number" id="produtoImpTaxa">
+    <button onclick="criarProdutoImportado()">Adicionar Produto Importado</button>
+
+    <h2>Atualizar Preço do Produto:</h2>
+    <label for="produtoIdPreco">ID do Produto:</label>
+    <input type="text" id="produtoIdPreco">
+    <label for="novoPreco">Novo Preço:</label>
+    <input type="number" id="novoPreco">
+    <button onclick="atualizarPreco()">Atualizar Preço</button>
+
+    <h2>Adicionar ao Estoque:</h2>
+    <label for="produtoIdEstoqueAdd">ID do Produto:</label>
+    <input type="text" id="produtoIdEstoqueAdd">
+    <label for="quantidadeAdd">Quantidade a Adicionar:</label>
+    <input type="number" id="quantidadeAdd">
+    <button onclick="adicionarEstoque()">Adicionar ao Estoque</button>
+
+    <h2>Remover do Estoque:</h2>
+    <label for="produtoIdEstoqueRem">ID do Produto:</label>
+    <input type="text" id="produtoIdEstoqueRem">
+    <label for="quantidadeRem">Quantidade a Remover:</label>
+    <input type="number" id="quantidadeRem">
+    <button onclick="removerEstoque()">Remover do Estoque</button>
+
+    <h2>Remover Produto por ID:</h2>
+    <label for="produtoIdRemover">ID do Produto:</label>
+    <input type="text" id="produtoIdRemover">
+    <button onclick="removerProdutoPorId()">Remover Produto por ID</button>
+
+    <div id="produtosInfo"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
